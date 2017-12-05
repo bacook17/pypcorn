@@ -1,0 +1,41 @@
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{afterpage,amsmath,amssymb,graphicx,natbib, color}
+\usepackage{hyperref}
+\bibliographystyle{yahapj}
+
+\usepackage{dcolumn}
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+
+\usepackage{array}   % for \newcolumntype macro
+\newcolumntype{L}{>{$}l<{$}} % math-mode version of ``l'' column type
+\newcolumntype{R}{>{$}r<{$}}
+\newcolumntype{C}{>{$}c<{$}}
+% Slightly bigger plots than default
+\newcommand\plottwowide[2]{\centering \leavevmode
+\includegraphics[width=.45\linewidth]{#1} \hfil
+\includegraphics[width=.45\linewidth]{#2}}
+
+\newcommand\plotoneman[2]{\centering \leavevmode
+\includegraphics[width=#2\linewidth]{#1}}
+
+\newcommand\apx{\ensuremath{\sim}}
+\newcommand\citeeg[1]{\citep[e.g.,][]{#1}}
+\newcommand\lsim{\lesssim}
+\newcommand\gsim{\gtrsim}
+\newcommand\kms{km~s$^{-1}$}
+\newcommand\todo[1]{{\color{red} #1}}
+\newcommand\power[2]{\ensuremath{#1\times10^{#2}}}
+\newcommand\Msun{\ensuremath{\mathrm{M}_\odot}}
+\newcommand\Lsun{\ensuremath{\mathrm{L}_\odot}}
+\newcommand\Reff{\ensuremath{\mathrm{R}_e}}
+\newcommand\Mstar{\ensuremath{\mathrm{M}_\star}}
+\newcommand\mgrad{\ensuremath{\nabla\mathrm{[Z/H]}}}
+\newcommand\agrad{\ensuremath{\nabla\mathrm{age}}}
+\newcommand\lumgrad{\ensuremath{\nabla\Sigma_V}}
+\newcommand\cgrad{\ensuremath{\nabla\textrm{g-r}}}
+\newcommand\fex{\ensuremath{\mathrm{f}_\mathrm{ex}}}
+\newcommand\FGM{\ensuremath{\mathrm{F}(\mathrm{G},\mathrm{M}_{20})}}
+
+\newcommand\changed[1]{{\bf #1}}
+%\renewcommand\changed[1]{#1}
